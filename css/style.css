@@ -1,0 +1,67 @@
+.container{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+grid-template-rows:(4, 1fr);
+grid-template-areas:
+"t  t   t" 
+"li ci ri";
+justify-content: center;
+
+}
+
+.images-center {
+  width:400px;
+  border-radius: 10px;
+  border: 3px solid red;
+  margin-left: 15px;
+}
+
+.title,
+.contact-us {
+  grid-area: t;
+  text-align: center;
+}
+
+.left-img{
+grid-area: li;
+}
+
+.middle-img{
+grid-area: ci;
+}
+
+.right-img{
+grid-area: ri;
+}
+
+.button{
+  background-color: black;
+  color:white;
+  padding:5px;
+  border-radius: 10px;
+  width:50%;
+  text-align: center;
+margin-left:100px;
+margin-top: 10px;;
+ 
+}
+
+.tyany,
+.diana{
+  background-color: cornflowerblue;
+  height: 200px;
+}
+
+/* .button-left{
+  grid-area: bl;
+}
+.button-center{
+grid-area: bc;
+}
+.button-right{
+grid-area: br;
+}
+.contact-us{
+  text-align: center;
+} */
+
